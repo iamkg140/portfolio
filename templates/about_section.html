@@ -1,0 +1,49 @@
+{% extends 'main.html' %} {% load static %} {% block content %}
+
+
+  {% include 'navigation.html' %}
+
+
+<!-- ABOUT SECTION STARTS -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-heading" data-outline="About">About</h2>
+    <div class="wrapper">
+      <div class="left">
+        <div class="card">
+          <div class="img">
+            <img src="3.jpg" />
+          </div>
+          <p class="card-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+            perspiciatis recusandae dolorem ipsa aperiam, repudiandae molestias
+            magni obcaecati quod error?
+          </p>
+          <h3 class="card-name">ITech</h3>
+          <p class="card-sub-title">CEO of the company</p>
+        </div>
+      </div>
+
+      <div class="right">
+        <p class="subheading">Hi! This is KABIR</p>
+        <h2 class="slogan">Freelancer</h2>
+        <p class="right-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          neque ducimus suscipit vel. Tempora voluptates repellat quos corrupti
+          libero dolorum autem nihil a dignissimos adipisci.
+        </p>
+        <div class="buttons">
+          <a href="#" class="primary-btn">Download CV</a>
+          <a href="{% url 'project' %}" class="primary-btn outline"
+            >See My Works</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ABOUT SECTION ENDS -->
+
+{% include 'footer.html' %}
+
+{% endblock %}

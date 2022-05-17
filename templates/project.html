@@ -1,0 +1,32 @@
+{% block content %}
+<!-- PROJECT SECTION STARTS -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-heading" data-outline="Projects">Projects</h2>
+    <div class="all-items">
+      {% for project in projects %}
+      <div class="item">
+        <div class="left">
+          <div class="img">
+            <img src="{{project.imageURL}}" />
+          </div>
+        </div>
+        <div class="right">
+          <h2 class="project-title">{{project.title}}</h2>
+          <h3 class="project-sub-title">{{project.short_desc}}</h3>
+          <p class="project-desc">{{project.full_desc}}</p>
+          <div class="buttons">
+            <a href="#" class="primary-btn">Know More</a>
+            <a href="#" class="primary-btn outline external-link"
+              ><span>Preview</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- PROJECTS SECTION ENDS -->
+{% endblock %}

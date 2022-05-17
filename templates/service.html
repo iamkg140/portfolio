@@ -1,0 +1,24 @@
+{% block content %}
+
+<!-- SERVICES SECTION STARTS -->
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-heading" data-outline="Services">Services</h2>
+    
+    <div class="all-items">
+      {% for service in services %}
+      <div class="item">
+        <i class="fas fa-laptop"></i>
+        <h3 class="item-heading">{{service.topic}}</h3>
+        <p class="item-desc">{{service.desc}}</p>
+      </div>
+
+      {% endfor %}
+    </div>
+    
+  </div>
+</section>
+<!-- SERVICES SECTION ENDS -->
+
+{% endblock %}
